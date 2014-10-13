@@ -33,4 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
         msgElem.innerHTML = 'mmmmmmmmMmmmeeeeeooooooooowwwwwWWWWWWW!!!!!!';
         animalSound.play();
     });
+
+    animalSound.addEventListener('ended', function() {
+        msgElem.innerHTML = '';
+    })
+
+    window.setInterval(function() {
+        document.getElementById('clock').innerHTML = new Date().toLocaleString();
+    }, 1000)
 });
