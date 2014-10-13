@@ -34,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
         animalSound.play();
     });
 
+
+
     animalSound.addEventListener('ended', function() {
         msgElem.innerHTML = '';
     })
